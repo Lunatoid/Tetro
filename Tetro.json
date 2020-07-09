@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+            "name": "Shaders/Sprite",
+            "type": "Shader",
+            "sources": [
+                {
+                    "backend": "DirectX",
+                    "vertex": "data/shaders/Sprite.Vertex.hlsl",
+                    "pixel": "data/shaders/Sprite.Pixel.hlsl"
+                },
+                {
+                    "backend": "OpenGL",
+                    "vertex": "data/shaders/Sprite.Vertex.glsl",
+                    "pixel": "data/shaders/Sprite.Pixel.glsl"
+                }
+            ]
+        },
+        {
+            "name": "Shaders/SolidSprite",
+            "type": "Shader",
+            "sources": [
+                {
+                    "backend": "DirectX",
+                    "vertex": "data/shaders/SolidSprite.Vertex.hlsl",
+                    "pixel": "data/shaders/SolidSprite.Pixel.hlsl"
+                },
+                {
+                    "backend": "OpenGL",
+                    "vertex": "data/shaders/SolidSprite.Vertex.glsl",
+                    "pixel": "data/shaders/SolidSprite.Pixel.glsl"
+                }
+            ]
+        },
+        {
+            "name": "GuiFont",
+            "type": "Font",
+            "source": "data/fonts/GuiFont.ttf"
+        },
+        {
+            "name": "GameBGM",
+            "type": "Audio",
+            "source": "data/audio/GameBGM.wav"
+        },
+        {
+            "name": "MenuBGM",
+            "type": "Audio",
+            "source": "data/audio/MenuBGM.wav"
+        },
+        {
+            "name": "SFX/Clear",
+            "type": "Audio",
+            "source": "data/audio/Clear.wav"
+        },
+        {
+            "name": "SFX/Drop",
+            "type": "Audio",
+            "source": "data/audio/Drop.wav"
+        },
+        {
+            "name": "SFX/Hold",
+            "type": "Audio",
+            "source": "data/audio/Hold.wav"
+        },
+        {
+            "name": "SFX/Rotate",
+            "type": "Audio",
+            "source": "data/audio/Rotate.wav"
+        },
+        {
+            "name": "SFX/SuperClear",
+            "type": "Audio",
+            "source": "data/audio/SuperClear.wav"
+        },
+        {
+            "name": "GameBG",
+            "type": "Texture",
+            "source": "data/textures/GameBG.png",
+            "filtering": "Point",
+            "wrapping": "Clamp"
+        },
+        {
+            "name": "MenuBG",
+            "type": "Texture",
+            "source": "data/textures/MenuBG.png",
+            "filtering": "Point",
+            "wrapping": "Clamp"
+        },
+        {
+            "name": "Tiles",
+            "type": "Texture",
+            "source": "data/textures/Tiles.png",
+            "filtering": "Point",
+            "wrapping": "Clamp"
+        },
+        {
+            "name": "Licenses",
+            "type": "Binary",
+            "source": "data/licenses.txt"
+        }
+    ]
+}

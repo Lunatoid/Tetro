@@ -1,0 +1,179 @@
+{
+    // Options: "DirectX", "OpenGL"
+    "backend": "OpenGL",
+    
+    // Whether or not to tween the Y position
+    "smooth_fall": true,
+    
+    // If true, there will be no lock delay on hard dropping
+    "sonic_lock": true,
+    
+    // Scores for 1, 2, 3, 4+ lines cleared
+    "scores": [
+        40,
+        100,
+        300,
+        800
+    ],
+    
+    // Sound volume
+    "bgm_volume": 0.3,
+    "sfx_volume": 0.8,
+    
+    // Switch time for multi-board gamemodes
+    "min_switch_time": 5.0,
+    "max_switch_time": 15.0,
+    
+    // How many seconds it takes for a tetro piece to drop
+    // It will interpolate between starting and final speeds depending on the score
+    "starting_fall_speed": 1.0,
+    "final_fall_speed": 0.02,
+    
+    // At how many points it will use the final fall speed
+    "max_score": 5000,
+    
+    // All the tetro pieces
+    // Shape: 4x4 string where X is the filled part. 
+    // Color: the color of the tile. Possible values:
+    //          Cyan, Yellow, Purple, Green, Red, Blue, Orange
+    // Offset: The offset upon rotating.
+    //            0: 0 degrees, 1: 90 degrees, 2: 180 degrees, 3: 270 degrees
+    //          The first component is the +X for clockwise rotation
+    //          The second component is the +Y for clockwise rotation
+    //          On counter-clockwise rotation these values get inverted
+    "pieces": [
+        // I piece
+        {
+            "shape": "....|....|XXXX|....",
+            "color": "Cyan",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        },
+        // Z piece
+        {
+            "shape": "....|....|.XX.|XX..",
+            "color": "Red",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        },
+        // S piece
+        {
+            "shape": "....|....|XX..|.XX.",
+            "color": "Green",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        },
+        // O piece
+        {
+            "shape": "....|....|XX..|XX..",
+            "color": "Yellow",
+            "offset": [
+                [
+                    0, -2
+                ],
+                [
+                    2, 0
+                ],
+                [
+                    0, 2
+                ],
+                [
+                    -2, 0
+                ]
+            ]
+        },
+        // T piece
+        {
+            "shape": "....|....|XXX.|.X..",
+            "color": "Purple",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        },
+        // L piece
+        {
+            "shape": "....|....|XXX.|..X.",
+            "color": "Orange",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        },
+        // J piece
+        {
+            "shape": "....|....|XXX.|X...",
+            "color": "Blue",
+            "offset": [
+                [
+                    0, -1
+                ],
+                [
+                    1, 0
+                ],
+                [
+                    0, 1
+                ],
+                [
+                    -1, 0
+                ]
+            ]
+        }
+    ]
+}
